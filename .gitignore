@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+coverage/
+bin/
+obj/
+target/
+.DS_Store
+.env
+.env.*
+.idea/
+.vscode/
+*.swp
+.expo/
+.expo-shared/
