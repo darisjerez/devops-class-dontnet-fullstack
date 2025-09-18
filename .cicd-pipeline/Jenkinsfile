@@ -37,13 +37,13 @@ pipeline {
 
         stage('Test and Code Coverage') {
             steps {
-                dir("${PROJECT_DIR}") {
+                dir("tests/FullstackApp.Tests") {
                     sh "dotnet test --collect:'XPlat Code Coverage' --verbosity normal"
                 }
             } 
             post{
                 always {
-                    archiveArtifacts artifacts: "${PROJECT_DIR}/TestResults/**/coverage.cobertura.xml", allowEmptyArchive: true
+                    archiveArtifacts artifacts: "tests/FullstackApp.Tests/TestResults/**/*.cobertura.xml", allowEmptyArchive: true
                 }
             }
         }
