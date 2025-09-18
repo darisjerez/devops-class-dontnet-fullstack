@@ -10,5 +10,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../../src/FullstackApp/FullstackApp.csproj" />
+    <PackageReference Include="coverlet.collector" Version="3.2.0" />
   </ItemGroup>
 </Project>
